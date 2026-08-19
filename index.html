@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="search-row">
+        <input
+          id="cityInput"
+          type="text"
+          placeholder="Enter a city.."
+          autocomplete="off"
+        />
+        <button
+          id="locateBtn"
+          title="Use my current location"
+          aria-label="Use my current location"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M12 2v3M12 19v3M2 12h3M19 12h3"></path>
+          </svg>
+        </button>
+        <button id="searchBtn">Search</button>
+      </div>
+
+      <hr />
+
+      <div id="result">
+        <div class="weather-body">
+          <div class="placeholder">
+            Search for a city to see the current weather.
+          </div>
+        </div>
+      </div>
+
+      <div id="forecast" class="forecast-row"></div>
+
+      <hr />
+
+      <div class="footer-note">
+        This project was coded by
+        <a href="#" target="_blank" rel="noopener">Ojochide Ibrahim</a>, is
+        <a
+          href="https://github.com/ibrahimeli030-lang/Week7_project"
+          target="_blank"
+          rel="noopener"
+          >open-sourced on GitHub</a
+        >
+        and
+        <a href="https://myweek7pr.netlify.app/" target="_blank" rel="noopener"
+          >hosted on Netlify</a
+        >
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
